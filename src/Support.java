@@ -1,19 +1,17 @@
-import java.util.ArrayList;
-
 public class Support {
 
     private int numero;
     private String titre;
-    private ArrayList<Artiste> artistes;
+    private Artiste lArtiste;
     private double duree;
     private int qttestock;
     private String commentaire;
 
-    public Support(int numero, String titre, ArrayList<Artiste> artistes, double duree, int qttestock, String commentaire) {
+    public Support(int numero, String titre, Artiste artiste, double duree, int qttestock, String commentaire) {
 
         this.numero = numero;
         this.titre = titre;
-        this.artistes = artistes;
+        this.lArtiste = artiste;
         this.duree = duree;
         this.qttestock = qttestock;
         this.commentaire = commentaire;
@@ -21,7 +19,7 @@ public class Support {
     }
 
     public String toString() {
-        return "";
+        return "Support de numéro: " + this.numero + "\nTitre: " + this.titre + "\nArtiste: " + this.lArtiste.toString() + "\nDurée: " + this.duree + "\nQuantité en stock: " + this.qttestock + "\nCommentaire: " + this.commentaire;
     }
 
     public int getNumero() {
@@ -29,9 +27,6 @@ public class Support {
     }
     public String getTitre() {
         return this.titre;
-    }
-    public ArrayList<Artiste> getArtistes() {
-        return this.artistes;
     }
     public double getDuree() {
         return this.duree;
@@ -48,9 +43,6 @@ public class Support {
     }
     public void setTitre(String titre) {
         this.titre = titre;
-    }
-    public void setArtistes(ArrayList<Artiste> artistes) {
-        this.artistes = artistes;
     }
     public void setDuree(double duree) {
         this.duree = duree;
