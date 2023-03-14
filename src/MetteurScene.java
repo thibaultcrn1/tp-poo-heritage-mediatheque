@@ -12,6 +12,11 @@ public class MetteurScene {
 
     }
 
+    @Override
+    public String toString() {
+        return "Identifiant: " + this.identifiant + "\nNom: " + this.nom + "\nPrénom: " + this.prenom;
+    }
+
     public int getIdentifiant() {
         return this.identifiant;
     }
