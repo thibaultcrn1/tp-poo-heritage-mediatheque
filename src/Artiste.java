@@ -14,6 +14,10 @@ public class Artiste {
 
     }
 
+    public String toString() {
+        return "Identifiant: " + this.identifiant + "\nNom: " + this.nom + "\nPrénom: " + this.prenom + "\nGenre: " + this.genre;
+    }
+
     public int getIdentifiant() {
         return this.identifiant;
     }
